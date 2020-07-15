@@ -13,7 +13,7 @@
                     <a href="{{route('author.edit',[$author])}}">{{$author->name}} {{$author->surname}}</a>
                     <form method="POST" action="{{route('author.destroy', [$author])}}">
                     @csrf
-                    <button class="red-button" type="submit">DELETE</button>
+                    <button class="btn btn-danger" type="submit">DELETE</button>
                     </form>
                     <br>
                   @endforeach
