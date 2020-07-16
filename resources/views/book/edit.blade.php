@@ -40,7 +40,7 @@
                             @endforeach
                     </select>
                         @csrf
-                        <button type="submit">EDIT</button>
+                        <button class="btn btn-success" type="submit">EDIT</button>
                     </form>
                </div>
            </div>

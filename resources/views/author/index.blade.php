@@ -10,10 +10,11 @@
                <div class="card-body">
 
                     @foreach ($authors as $author)
-                    <a href="{{route('author.edit',[$author])}}">{{$author->name}} {{$author->surname}}</a>
+                    <p>{{$author->name}} {{$author->surname}}</p>
                     <form method="POST" action="{{route('author.destroy', [$author])}}">
                     @csrf
                     <button class="btn btn-danger" type="submit">DELETE</button>
+                    <a class="btn btn-success" href="{{route('author.edit',[$author])}}">EDIT</a>
                     </form>
                     <br>
                   @endforeach
